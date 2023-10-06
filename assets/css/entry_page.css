@@ -1,0 +1,116 @@
+body {
+    background-color: #F0F2F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#center-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+}
+
+#image-text-container {
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-right: 32px;
+    width: 580px;
+}
+
+#para-text {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+#entry-image {
+    width: 301px;
+    margin: -28px;
+}
+
+#view-form{
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+}
+
+#sign-in-form {
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    margin: 8px;
+    padding: 2px;
+}
+
+#sign-in-form form input {
+    margin: 0.25em;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+#log-in-btn {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 371px;
+    display: block;
+    margin: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+#broken-line {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+#forgotten-password {
+    display: block;
+    margin-left: 111px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#create-account {
+    border: none;
+    border-radius: 6px;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: 0.35rem;
+    padding: 10px 30px;
+    background-color: #42b72a;
+    text-decoration: none;
+    color: white;
+    margin-left: 90px;
+    text-align: center;
+}
+
+#create-account-google {
+    text-decoration: none;
+    margin-left: 3.25rem;
+    margin-top: 5px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+
+

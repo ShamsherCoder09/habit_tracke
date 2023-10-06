@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/entry_page.css">
+<body>
+    <div id="center-all">
+        <div id="image-text-container">
+            <img id="entry-image" src="/images/habits-word-made-building-blocks.png"
+                alt="habits-word-made-building-blocks">
+            <p id="para-text">Change your habit Change your Life</p>
+        </div>
+        <div id="view-form">
+            <div id="sign-in-form">
+                <form action="/users/create-session" method="get">
+                    <input type="email" name="email" placeholder="Enter your Email" required><br>
+                    <input type="password" name="password" placeholder="Enter your password" required><br>
+                    <button type="submit" id="log-in-btn">Log In</button>
+                </form>
+            </div>
+            <a href="/users/forgotten-password" id="forgotten-password">Fogotten Password?</a>
+            <div id="broken-line"></div>
+            <a href="/users/sign-up" id="create-account">Create Account</a>
+            <a href="/users/auth/google" id="create-account-google">Sign Up or Sign In using Google</a>
+        </div>
+    </div>
+</body>

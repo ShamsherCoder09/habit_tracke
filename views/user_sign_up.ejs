@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/user_sign_up.css">
+<body>
+    <div id="view-form">
+    <form action="/users/create" method="post" id="sign-up-form">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="password" name="confirm_password" placeholder="Re-enter your password" required>
+        <button type="submit" id="create-account">Create Account</button>
+    </form>
+    <a href="/users/auth/google" id="create-account-google">Sign Up or Sign In using Google</a>
+    </div>    
+</body>

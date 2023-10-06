@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+        integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%-style%>
+        <title>
+            <%=title%>
+        </title>
+</head>
+
+<body>
+    <%if(typeof showHeaderAndFooter !== 'undefined' && showHeaderAndFooter){%>
+        <%- include('_header'); %>
+    <%}%>
+            
+        <%-body%>
+
+    <%if(typeof showHeaderAndFooter !== 'undefined' && showHeaderAndFooter){%>
+    <%- include('_footer'); %>
+    <%}%>
+
+
+
+
+                <%-script%>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"
+                        integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                    <script>
+     <% if (flash.success && flash.success.length > 0) {%>
+                            new Noty({
+                                theme: 'relax',
+                                text: '<%=flash.success[0]%>',
+                                type: 'success',
+                                layout: 'topRight',
+                                timeout: 1500
+                            }).show();    
+        <% } %>
+
+        <%if (flash.error && flash.error.length > 0) {%>
+                            new Noty({
+                                theme: 'relax',
+                                text: '<%=flash.error[0]%>',
+                                type: 'error',
+                                layout: 'topRight',
+                                timeout: 1500
+                            }).show();
+
+        <%}%>
+                    </script>
+</body>
+
+</html>

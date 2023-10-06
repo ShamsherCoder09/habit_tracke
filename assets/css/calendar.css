@@ -1,0 +1,6 @@
+#calendar {
+    width: 50%;
+    /* Set the width of the calendar container */
+    display: block;
+    margin: auto;
+}

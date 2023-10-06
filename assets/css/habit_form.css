@@ -1,0 +1,54 @@
+#center-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+}
+
+#view-form{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+}
+
+#track-habit-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-end;
+    margin: 8px;
+    padding: 2px;
+}
+
+
+.select-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-form select{
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+#submit-btn{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 371px;
+    display: block;
+    margin-top: 0.8rem;
+    color: white;
+    font-weight: bolder;
+}

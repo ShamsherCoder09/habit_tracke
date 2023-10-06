@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/header.css">
+<body>
+    <div id="nav-bar">
+        <%if(locals.user){%>
+            <div class="left">
+                <a href="/users/profile">
+                    <img src="/images/habit_logo.svg" alt="habit_logo" class="logo">
+                </a>
+            </div>
+
+            <div class="right">
+                <div id="user-profile">
+                    <a href="/users/profile">
+                        <%=user.name%>
+                    </a>
+                </div>
+                <div id="sign-out">
+                    <a href="/users/sign-out">Sign Out</a>
+                </div>
+            </div>
+            <%}else{%>
+                <div class="left">
+                    <a href="/">
+                        <img src="/images/habit_logo.svg" alt="habit_logo" class="logo">
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="/users/sign-up" id="sign-up">Sign Up</a>
+                    <a href="/users/sign-in" id="sign-in">Sign In</a>
+                </div>
+                <%}%>
+    </div>
+</body>

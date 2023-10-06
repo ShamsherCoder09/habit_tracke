@@ -1,0 +1,41 @@
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ADD8E6;
+    height: 2.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.logo{
+    width: fit-content;
+    height: 1.5rem;
+    margin:auto;
+    display: block;
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
+.right{
+    display: flex;
+}
+
+#user-profile{
+    margin: 0.5rem;
+}
+
+#sign-out{
+    margin: 0.5rem;
+}
+
+#sign-up{
+    margin: 0.5rem;
+
+}
+
+#sign-in{
+    margin: 0.5rem;
+}
+a{
+    text-decoration: none;
+}
